@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface OMPViewController : UIViewController
+@interface OMPMainViewController : UIViewController
 
 @end

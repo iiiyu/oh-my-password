@@ -6,18 +6,25 @@
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "OMPViewController.h"
+#import "OMPMainViewController.h"
+#import "OMPAddMainUserViewController.h"
 
-@interface OMPViewController ()
+@interface OMPMainViewController ()
 
 @end
 
-@implementation OMPViewController
+@implementation OMPMainViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    OMPAddMainUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CarViewController"];
+	[self addChildViewController:viewController];
+	[viewController willMoveToParentViewController:self];
+	[self.view addSubview:viewController.view];
+	[viewController didMoveToParentViewController:self];
+    
 }
 
 - (void)viewDidUnload

@@ -15,7 +15,7 @@
 		C9B29B6A154132EA0004EBC8 /* OMPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */; };
 		C9B29B6D154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */; };
 		C9B29B70154132EA0004EBC8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */; };
-		C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B72154132EA0004EBC8 /* OMPViewController.m */; };
+		C9B29B73154132EA0004EBC8 /* OMPMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B72154132EA0004EBC8 /* OMPMainViewController.m */; };
 		C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */; };
 		C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */; };
 		C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */; };
@@ -35,8 +35,8 @@
 		C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPAppDelegate.m; sourceTree = "<group>"; };
 		C9B29B6C154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
 		C9B29B6F154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
-		C9B29B71154132EA0004EBC8 /* OMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPViewController.h; sourceTree = "<group>"; };
-		C9B29B72154132EA0004EBC8 /* OMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPViewController.m; sourceTree = "<group>"; };
+		C9B29B71154132EA0004EBC8 /* OMPMainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPMainViewController.h; sourceTree = "<group>"; };
+		C9B29B72154132EA0004EBC8 /* OMPMainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPMainViewController.m; sourceTree = "<group>"; };
 		C9B29B82154135250004EBC8 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
 		C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
 		C9B29B84154135250004EBC8 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
@@ -123,8 +123,8 @@
 		C9B29B7F154134050004EBC8 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C9B29B71154132EA0004EBC8 /* OMPViewController.h */,
-				C9B29B72154132EA0004EBC8 /* OMPViewController.m */,
+				C9B29B71154132EA0004EBC8 /* OMPMainViewController.h */,
+				C9B29B72154132EA0004EBC8 /* OMPMainViewController.m */,
 				C9B29B8815413CC30004EBC8 /* OMPAddMainUserViewController.h */,
 				C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */,
 				C9B29B8B15413EFA0004EBC8 /* OMPMainPasswordViewController.h */,
@@ -219,7 +219,7 @@
 			files = (
 				C9B29B66154132EA0004EBC8 /* main.m in Sources */,
 				C9B29B6A154132EA0004EBC8 /* OMPAppDelegate.m in Sources */,
-				C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */,
+				C9B29B73154132EA0004EBC8 /* OMPMainViewController.m in Sources */,
 				C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */,
 				C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */,
 				C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */,
