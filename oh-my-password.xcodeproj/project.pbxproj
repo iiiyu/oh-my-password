@@ -19,6 +19,7 @@
 		C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */; };
 		C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */; };
 		C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */; };
+		C9B29B8D15413EFA0004EBC8 /* OMPMainPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,8 @@
 		C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 		C9B29B8815413CC30004EBC8 /* OMPAddMainUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPAddMainUserViewController.h; sourceTree = "<group>"; };
 		C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPAddMainUserViewController.m; sourceTree = "<group>"; };
+		C9B29B8B15413EFA0004EBC8 /* OMPMainPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPMainPasswordViewController.h; sourceTree = "<group>"; };
+		C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPMainPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +127,8 @@
 				C9B29B72154132EA0004EBC8 /* OMPViewController.m */,
 				C9B29B8815413CC30004EBC8 /* OMPAddMainUserViewController.h */,
 				C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */,
+				C9B29B8B15413EFA0004EBC8 /* OMPMainPasswordViewController.h */,
+				C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -218,6 +223,7 @@
 				C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */,
 				C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */,
 				C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */,
+				C9B29B8D15413EFA0004EBC8 /* OMPMainPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
