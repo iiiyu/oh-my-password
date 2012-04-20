@@ -16,6 +16,8 @@
 		C9B29B6D154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */; };
 		C9B29B70154132EA0004EBC8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */; };
 		C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B72154132EA0004EBC8 /* OMPViewController.m */; };
+		C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */; };
+		C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,10 @@
 		C9B29B6F154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
 		C9B29B71154132EA0004EBC8 /* OMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPViewController.h; sourceTree = "<group>"; };
 		C9B29B72154132EA0004EBC8 /* OMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPViewController.m; sourceTree = "<group>"; };
+		C9B29B82154135250004EBC8 /* NSData+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+AESCrypt.h"; sourceTree = "<group>"; };
+		C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+AESCrypt.m"; sourceTree = "<group>"; };
+		C9B29B84154135250004EBC8 /* NSString+AESCrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+AESCrypt.h"; sourceTree = "<group>"; };
+		C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+AESCrypt.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,12 +85,9 @@
 		C9B29B5F154132EA0004EBC8 /* oh-my-password */ = {
 			isa = PBXGroup;
 			children = (
-				C9B29B68154132EA0004EBC8 /* OMPAppDelegate.h */,
-				C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */,
-				C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */,
-				C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */,
-				C9B29B71154132EA0004EBC8 /* OMPViewController.h */,
-				C9B29B72154132EA0004EBC8 /* OMPViewController.m */,
+				C9B29B80154134130004EBC8 /* UI */,
+				C9B29B7F154134050004EBC8 /* Controllers */,
+				C9B29B7D154133F50004EBC8 /* Classes */,
 				C9B29B60154132EA0004EBC8 /* Supporting Files */,
 			);
 			path = "oh-my-password";
@@ -99,6 +102,45 @@
 				C9B29B67154132EA0004EBC8 /* oh-my-password-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C9B29B7D154133F50004EBC8 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B81154135250004EBC8 /* AESCrypt */,
+				C9B29B68154132EA0004EBC8 /* OMPAppDelegate.h */,
+				C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		C9B29B7F154134050004EBC8 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B71154132EA0004EBC8 /* OMPViewController.h */,
+				C9B29B72154132EA0004EBC8 /* OMPViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		C9B29B80154134130004EBC8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */,
+				C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		C9B29B81154135250004EBC8 /* AESCrypt */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B82154135250004EBC8 /* NSData+AESCrypt.h */,
+				C9B29B83154135250004EBC8 /* NSData+AESCrypt.m */,
+				C9B29B84154135250004EBC8 /* NSString+AESCrypt.h */,
+				C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */,
+			);
+			path = AESCrypt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,6 +210,8 @@
 				C9B29B66154132EA0004EBC8 /* main.m in Sources */,
 				C9B29B6A154132EA0004EBC8 /* OMPAppDelegate.m in Sources */,
 				C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */,
+				C9B29B86154135250004EBC8 /* NSData+AESCrypt.m in Sources */,
+				C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -289,6 +333,7 @@
 				C9B29B78154132EA0004EBC8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
