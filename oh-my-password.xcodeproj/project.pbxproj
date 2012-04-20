@@ -20,6 +20,11 @@
 		C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B85154135250004EBC8 /* NSString+AESCrypt.m */; };
 		C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */; };
 		C9B29B8D15413EFA0004EBC8 /* OMPMainPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */; };
+		C9B29B90154152020004EBC8 /* OMPSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B8F154152020004EBC8 /* OMPSettingViewController.m */; };
+		C9B29B93154152370004EBC8 /* OMPAccountTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B92154152370004EBC8 /* OMPAccountTableViewController.m */; };
+		C9B29B96154153CD0004EBC8 /* OMPAddUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B95154153CD0004EBC8 /* OMPAddUserViewController.m */; };
+		C9B29B99154154560004EBC8 /* OMPShowAccountViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B98154154560004EBC8 /* OMPShowAccountViewController.m */; };
+		C9B29B9C154154A10004EBC8 /* OMPShowPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B9B154154A10004EBC8 /* OMPShowPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,6 +50,16 @@
 		C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPAddMainUserViewController.m; sourceTree = "<group>"; };
 		C9B29B8B15413EFA0004EBC8 /* OMPMainPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPMainPasswordViewController.h; sourceTree = "<group>"; };
 		C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPMainPasswordViewController.m; sourceTree = "<group>"; };
+		C9B29B8E154152020004EBC8 /* OMPSettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPSettingViewController.h; sourceTree = "<group>"; };
+		C9B29B8F154152020004EBC8 /* OMPSettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPSettingViewController.m; sourceTree = "<group>"; };
+		C9B29B91154152360004EBC8 /* OMPAccountTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPAccountTableViewController.h; sourceTree = "<group>"; };
+		C9B29B92154152370004EBC8 /* OMPAccountTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPAccountTableViewController.m; sourceTree = "<group>"; };
+		C9B29B94154153CD0004EBC8 /* OMPAddUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPAddUserViewController.h; sourceTree = "<group>"; };
+		C9B29B95154153CD0004EBC8 /* OMPAddUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPAddUserViewController.m; sourceTree = "<group>"; };
+		C9B29B97154154560004EBC8 /* OMPShowAccountViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPShowAccountViewController.h; sourceTree = "<group>"; };
+		C9B29B98154154560004EBC8 /* OMPShowAccountViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPShowAccountViewController.m; sourceTree = "<group>"; };
+		C9B29B9A154154A10004EBC8 /* OMPShowPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPShowPasswordViewController.h; sourceTree = "<group>"; };
+		C9B29B9B154154A10004EBC8 /* OMPShowPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPShowPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +144,16 @@
 				C9B29B8915413CC30004EBC8 /* OMPAddMainUserViewController.m */,
 				C9B29B8B15413EFA0004EBC8 /* OMPMainPasswordViewController.h */,
 				C9B29B8C15413EFA0004EBC8 /* OMPMainPasswordViewController.m */,
+				C9B29B8E154152020004EBC8 /* OMPSettingViewController.h */,
+				C9B29B8F154152020004EBC8 /* OMPSettingViewController.m */,
+				C9B29B91154152360004EBC8 /* OMPAccountTableViewController.h */,
+				C9B29B92154152370004EBC8 /* OMPAccountTableViewController.m */,
+				C9B29B94154153CD0004EBC8 /* OMPAddUserViewController.h */,
+				C9B29B95154153CD0004EBC8 /* OMPAddUserViewController.m */,
+				C9B29B97154154560004EBC8 /* OMPShowAccountViewController.h */,
+				C9B29B98154154560004EBC8 /* OMPShowAccountViewController.m */,
+				C9B29B9A154154A10004EBC8 /* OMPShowPasswordViewController.h */,
+				C9B29B9B154154A10004EBC8 /* OMPShowPasswordViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -224,6 +249,11 @@
 				C9B29B87154135250004EBC8 /* NSString+AESCrypt.m in Sources */,
 				C9B29B8A15413CC30004EBC8 /* OMPAddMainUserViewController.m in Sources */,
 				C9B29B8D15413EFA0004EBC8 /* OMPMainPasswordViewController.m in Sources */,
+				C9B29B90154152020004EBC8 /* OMPSettingViewController.m in Sources */,
+				C9B29B93154152370004EBC8 /* OMPAccountTableViewController.m in Sources */,
+				C9B29B96154153CD0004EBC8 /* OMPAddUserViewController.m in Sources */,
+				C9B29B99154154560004EBC8 /* OMPShowAccountViewController.m in Sources */,
+				C9B29B9C154154A10004EBC8 /* OMPShowPasswordViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

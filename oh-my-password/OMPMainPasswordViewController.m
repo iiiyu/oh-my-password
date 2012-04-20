@@ -40,4 +40,25 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+
+- (IBAction)buttonShowAccount:(id)sender {
+
+//    [self performSegueWithIdentifier:@"ShowAccountData" sender:sender];
+    
+}
+
+
+//- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+//{
+//	NSString *identifier = [segue identifier];
+//	if ([identifier isEqualToString:@"ShowMonthView"] || [identifier isEqualToString:@"ShowWeatherView"]) {
+//		[segue.destinationViewController setDelegate:self];
+//	}
+//	else if ([identifier isEqualToString:@"ShowMoreView"]) {
+//		UINavigationController *navigationController = segue.destinationViewController;
+//		MoreViewController *viewController = (MoreViewController *)navigationController.topViewController;
+//		viewController.delegate = self;
+//	}
+//}
+
 @end

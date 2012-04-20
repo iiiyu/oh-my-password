@@ -19,7 +19,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    OMPAddMainUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"CarViewController"];
+    OMPAddMainUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddMainUserViewController"];
 	[self addChildViewController:viewController];
 	[viewController willMoveToParentViewController:self];
 	[self.view addSubview:viewController.view];

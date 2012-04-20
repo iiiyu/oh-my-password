@@ -1,18 +1,18 @@
 //
-//  OMPAddMainUserViewController.m
+//  OMPShowPasswordViewController.m
 //  oh-my-password
 //
 //  Created by ChenYu Xiao on 12-4-20.
 //  Copyright (c) 2012年 __MyCompanyName__. All rights reserved.
 //
 
-#import "OMPAddMainUserViewController.h"
+#import "OMPShowPasswordViewController.h"
 
-@interface OMPAddMainUserViewController ()
+@interface OMPShowPasswordViewController ()
 
 @end
 
-@implementation OMPAddMainUserViewController
+@implementation OMPShowPasswordViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,7 +39,5 @@
 {
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
-
-
 
 @end
