@@ -8,7 +8,7 @@
 
 #import "OMPAccountTableViewController.h"
 
-@interface OMPAccountTableViewController ()
+@interface OMPAccountTableViewController () <UITableViewDelegate, UITableViewDataSource>
 
 @end
 
@@ -46,20 +46,26 @@
     return (interfaceOrientation == UIInterfaceOrientationPortrait);
 }
 
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setToolbarHidden:NO animated:YES];
+}
+
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
+//#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
+//#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return 2;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,7 +73,28 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]
+                initWithStyle:UITableViewCellStyleDefault 
+                reuseIdentifier:CellIdentifier];
+
+    }
+    
+    cell.textLabel.text = @"2";
+    
     // Configure the cell...
+    
+//    UITableViewCell *result = nil;
+//    if ([tableView isEqual:self.myTableView]){
+//        static NSString *TableViewCellIdentifier = @"MyCells";
+//        result = [tableView dequeueReusableCellWithIdentifier:TableViewCellIdentifier];
+//        if (result == nil){
+//            result = [[UITableViewCell alloc]
+//                      }
+//                      initWithStyle:UITableViewCellStyleDefault reuseIdentifier:TableViewCellIdentifier];
+//            result.textLabel.text = [NSString stringWithFormat:@"Section %ld, Cell %ld",
+//                                     }
+//                                     return result;
     
     return cell;
 }
