@@ -1,0 +1,296 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B59154132EA0004EBC8 /* UIKit.framework */; };
+		C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5B154132EA0004EBC8 /* Foundation.framework */; };
+		C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */; };
+		C9B29B64154132EA0004EBC8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B62154132EA0004EBC8 /* InfoPlist.strings */; };
+		C9B29B66154132EA0004EBC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B65154132EA0004EBC8 /* main.m */; };
+		C9B29B6A154132EA0004EBC8 /* OMPAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */; };
+		C9B29B6D154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */; };
+		C9B29B70154132EA0004EBC8 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */; };
+		C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C9B29B72154132EA0004EBC8 /* OMPViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		C9B29B55154132EA0004EBC8 /* oh-my-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oh-my-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C9B29B59154132EA0004EBC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		C9B29B5B154132EA0004EBC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		C9B29B61154132EA0004EBC8 /* oh-my-password-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "oh-my-password-Info.plist"; sourceTree = "<group>"; };
+		C9B29B63154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		C9B29B65154132EA0004EBC8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C9B29B67154132EA0004EBC8 /* oh-my-password-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "oh-my-password-Prefix.pch"; sourceTree = "<group>"; };
+		C9B29B68154132EA0004EBC8 /* OMPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPAppDelegate.h; sourceTree = "<group>"; };
+		C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPAppDelegate.m; sourceTree = "<group>"; };
+		C9B29B6C154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		C9B29B6F154132EA0004EBC8 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		C9B29B71154132EA0004EBC8 /* OMPViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPViewController.h; sourceTree = "<group>"; };
+		C9B29B72154132EA0004EBC8 /* OMPViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OMPViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C9B29B52154132EA0004EBC8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */,
+				C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */,
+				C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C9B29B4A154132E90004EBC8 = {
+			isa = PBXGroup;
+			children = (
+				C9B29B5F154132EA0004EBC8 /* oh-my-password */,
+				C9B29B58154132EA0004EBC8 /* Frameworks */,
+				C9B29B56154132EA0004EBC8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C9B29B56154132EA0004EBC8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B55154132EA0004EBC8 /* oh-my-password.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C9B29B58154132EA0004EBC8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B59154132EA0004EBC8 /* UIKit.framework */,
+				C9B29B5B154132EA0004EBC8 /* Foundation.framework */,
+				C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C9B29B5F154132EA0004EBC8 /* oh-my-password */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B68154132EA0004EBC8 /* OMPAppDelegate.h */,
+				C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */,
+				C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */,
+				C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */,
+				C9B29B71154132EA0004EBC8 /* OMPViewController.h */,
+				C9B29B72154132EA0004EBC8 /* OMPViewController.m */,
+				C9B29B60154132EA0004EBC8 /* Supporting Files */,
+			);
+			path = "oh-my-password";
+			sourceTree = "<group>";
+		};
+		C9B29B60154132EA0004EBC8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				C9B29B61154132EA0004EBC8 /* oh-my-password-Info.plist */,
+				C9B29B62154132EA0004EBC8 /* InfoPlist.strings */,
+				C9B29B65154132EA0004EBC8 /* main.m */,
+				C9B29B67154132EA0004EBC8 /* oh-my-password-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C9B29B54154132EA0004EBC8 /* oh-my-password */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9B29B76154132EA0004EBC8 /* Build configuration list for PBXNativeTarget "oh-my-password" */;
+			buildPhases = (
+				C9B29B51154132EA0004EBC8 /* Sources */,
+				C9B29B52154132EA0004EBC8 /* Frameworks */,
+				C9B29B53154132EA0004EBC8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "oh-my-password";
+			productName = "oh-my-password";
+			productReference = C9B29B55154132EA0004EBC8 /* oh-my-password.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C9B29B4C154132E90004EBC8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = OMP;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = C9B29B4F154132E90004EBC8 /* Build configuration list for PBXProject "oh-my-password" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = C9B29B4A154132E90004EBC8;
+			productRefGroup = C9B29B56154132EA0004EBC8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C9B29B54154132EA0004EBC8 /* oh-my-password */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C9B29B53154132EA0004EBC8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B29B64154132EA0004EBC8 /* InfoPlist.strings in Resources */,
+				C9B29B6D154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard in Resources */,
+				C9B29B70154132EA0004EBC8 /* MainStoryboard_iPad.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C9B29B51154132EA0004EBC8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C9B29B66154132EA0004EBC8 /* main.m in Sources */,
+				C9B29B6A154132EA0004EBC8 /* OMPAppDelegate.m in Sources */,
+				C9B29B73154132EA0004EBC8 /* OMPViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		C9B29B62154132EA0004EBC8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B29B63154132EA0004EBC8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		C9B29B6B154132EA0004EBC8 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B29B6C154132EA0004EBC8 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		C9B29B6E154132EA0004EBC8 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C9B29B6F154132EA0004EBC8 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C9B29B74154132EA0004EBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C9B29B75154132EA0004EBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C9B29B77154132EA0004EBC8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oh-my-password/oh-my-password-Prefix.pch";
+				INFOPLIST_FILE = "oh-my-password/oh-my-password-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		C9B29B78154132EA0004EBC8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "oh-my-password/oh-my-password-Prefix.pch";
+				INFOPLIST_FILE = "oh-my-password/oh-my-password-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C9B29B4F154132E90004EBC8 /* Build configuration list for PBXProject "oh-my-password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B29B74154132EA0004EBC8 /* Debug */,
+				C9B29B75154132EA0004EBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C9B29B76154132EA0004EBC8 /* Build configuration list for PBXNativeTarget "oh-my-password" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C9B29B77154132EA0004EBC8 /* Debug */,
+				C9B29B78154132EA0004EBC8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C9B29B4C154132E90004EBC8 /* Project object */;
+}
