@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C90873641543B10F00CF3B48 /* OMPModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C90873621543B10F00CF3B48 /* OMPModel.xcdatamodeld */; };
 		C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B59154132EA0004EBC8 /* UIKit.framework */; };
 		C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5B154132EA0004EBC8 /* Foundation.framework */; };
 		C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */; };
@@ -28,6 +29,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C90873631543B10F00CF3B48 /* OMPModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = OMPModel.xcdatamodel; sourceTree = "<group>"; };
+		C90873651543B21600CF3B48 /* OMPCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPCommon.h; sourceTree = "<group>"; };
 		C9B29B55154132EA0004EBC8 /* oh-my-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oh-my-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B29B59154132EA0004EBC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9B29B5B154132EA0004EBC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -76,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C90873601543B0D800CF3B48 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C90873621543B10F00CF3B48 /* OMPModel.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		C9B29B4A154132E90004EBC8 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +117,7 @@
 		C9B29B5F154132EA0004EBC8 /* oh-my-password */ = {
 			isa = PBXGroup;
 			children = (
+				C90873601543B0D800CF3B48 /* Model */,
 				C9B29B80154134130004EBC8 /* UI */,
 				C9B29B7F154134050004EBC8 /* Controllers */,
 				C9B29B7D154133F50004EBC8 /* Classes */,
@@ -131,6 +143,7 @@
 				C9B29B81154135250004EBC8 /* AESCrypt */,
 				C9B29B68154132EA0004EBC8 /* OMPAppDelegate.h */,
 				C9B29B69154132EA0004EBC8 /* OMPAppDelegate.m */,
+				C90873651543B21600CF3B48 /* OMPCommon.h */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -254,6 +267,7 @@
 				C9B29B96154153CD0004EBC8 /* OMPAddUserViewController.m in Sources */,
 				C9B29B99154154560004EBC8 /* OMPShowAccountViewController.m in Sources */,
 				C9B29B9C154154A10004EBC8 /* OMPShowPasswordViewController.m in Sources */,
+				C90873641543B10F00CF3B48 /* OMPModel.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -378,6 +392,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C90873621543B10F00CF3B48 /* OMPModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C90873631543B10F00CF3B48 /* OMPModel.xcdatamodel */,
+			);
+			currentVersion = C90873631543B10F00CF3B48 /* OMPModel.xcdatamodel */;
+			path = OMPModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C9B29B4C154132E90004EBC8 /* Project object */;
 }
