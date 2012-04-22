@@ -12,6 +12,8 @@
 #import "NSData+AESCrypt.h"
 #import "NSString+AESCrypt.h"
 
+#import "User.h"
+
 // set eunm userDefaultUpdateCycle
 typedef enum { 
     MONTH_UPDATE, // Monthly prompted to update time
@@ -32,14 +34,6 @@ typedef enum  {
     NUMBER_CHAR_SYMBOL = (ONLY_NUMBER | ONLY_CHAR | ONLY_SYMBOL)
 }
 enumuserDefaultPasswordType;
-
-
-
-
-
-
-
-
 
 
 

@@ -7,6 +7,7 @@
 //
 
 #import "OMPAddMainUserViewController.h"
+#import "OMPCommon.h"
 
 @interface OMPAddMainUserViewController ()
 

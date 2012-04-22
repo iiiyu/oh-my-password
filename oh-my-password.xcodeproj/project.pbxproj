@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		C90873641543B10F00CF3B48 /* OMPModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C90873621543B10F00CF3B48 /* OMPModel.xcdatamodeld */; };
-		C908736A1543C00A00CF3B48 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = C90873681543C00A00CF3B48 /* OpenUDID.m */; };
+		C908736A1543C00A00CF3B48 /* OpenUDID.m in Sources */ = {isa = PBXBuildFile; fileRef = C90873681543C00A00CF3B48 /* OpenUDID.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		C908736E1543C17800CF3B48 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C908736D1543C17800CF3B48 /* User.m */; };
+		C908737E1543CEAC00CF3B48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C908737D1543CEAC00CF3B48 /* CoreData.framework */; };
 		C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B59154132EA0004EBC8 /* UIKit.framework */; };
 		C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5B154132EA0004EBC8 /* Foundation.framework */; };
 		C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */; };
@@ -34,6 +36,9 @@
 		C90873651543B21600CF3B48 /* OMPCommon.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OMPCommon.h; sourceTree = "<group>"; };
 		C90873671543C00A00CF3B48 /* OpenUDID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenUDID.h; sourceTree = "<group>"; };
 		C90873681543C00A00CF3B48 /* OpenUDID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenUDID.m; sourceTree = "<group>"; };
+		C908736C1543C17800CF3B48 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		C908736D1543C17800CF3B48 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		C908737D1543CEAC00CF3B48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C9B29B55154132EA0004EBC8 /* oh-my-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oh-my-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B29B59154132EA0004EBC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9B29B5B154132EA0004EBC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C908737E1543CEAC00CF3B48 /* CoreData.framework in Frameworks */,
 				C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */,
 				C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */,
 				C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */,
@@ -86,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				C90873621543B10F00CF3B48 /* OMPModel.xcdatamodeld */,
+				C908736C1543C17800CF3B48 /* User.h */,
+				C908736D1543C17800CF3B48 /* User.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -99,9 +107,17 @@
 			path = OpenUDID;
 			sourceTree = "<group>";
 		};
+		C908736F1543C19F00CF3B48 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		C9B29B4A154132E90004EBC8 = {
 			isa = PBXGroup;
 			children = (
+				C908736F1543C19F00CF3B48 /* Resources */,
 				C9B29B5F154132EA0004EBC8 /* oh-my-password */,
 				C9B29B58154132EA0004EBC8 /* Frameworks */,
 				C9B29B56154132EA0004EBC8 /* Products */,
@@ -119,6 +135,7 @@
 		C9B29B58154132EA0004EBC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C908737D1543CEAC00CF3B48 /* CoreData.framework */,
 				C9B29B59154132EA0004EBC8 /* UIKit.framework */,
 				C9B29B5B154132EA0004EBC8 /* Foundation.framework */,
 				C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */,
@@ -282,6 +299,7 @@
 				C9B29B9C154154A10004EBC8 /* OMPShowPasswordViewController.m in Sources */,
 				C90873641543B10F00CF3B48 /* OMPModel.xcdatamodeld in Sources */,
 				C908736A1543C00A00CF3B48 /* OpenUDID.m in Sources */,
+				C908736E1543C17800CF3B48 /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
