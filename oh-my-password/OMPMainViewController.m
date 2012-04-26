@@ -27,12 +27,14 @@
     NSUserDefaults *ud = [NSUserDefaults standardUserDefaults];
     NSString *udUserName = [ud objectForKey:@"oh my password select user"];
     if (udUserName) {
-        OMPMainPasswordViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:
-                                                         @"MainPasswordViewController"];
-        [self addChildViewController:viewController];
-        [viewController willMoveToParentViewController:self];
-        [self.view addSubview:viewController.view];
-        [viewController didMoveToParentViewController:self];
+//        OMPMainPasswordViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:
+//                                                         @"MainPasswordViewController"];
+//        [self addChildViewController:viewController];
+//        [viewController willMoveToParentViewController:self];
+//        [self.view addSubview:viewController.view];
+//        [viewController didMoveToParentViewController:self];
+        
+        [self performSegueWithIdentifier:@"ShowMainPasswordView" sender:self];
     }
     else {
         OMPDataModle *ompDataModle = [OMPDataModle shareOMPDataModle];
@@ -59,23 +61,25 @@
         /* Make sure we get the array */
         if ([users count] > 0){
             NSLog(@"Find user.");
-            OMPSelectUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SelectUserViewController"];
-            [self addChildViewController:viewController];
-            [viewController willMoveToParentViewController:self];
-            [self.view addSubview:viewController.view];
-            [viewController didMoveToParentViewController:self];
+//            OMPSelectUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"SelectUserViewController"];
+//            [self addChildViewController:viewController];
+//            [viewController willMoveToParentViewController:self];
+//            [self.view addSubview:viewController.view];
+//            [viewController didMoveToParentViewController:self];
+            
+            [self performSegueWithIdentifier:@"ShowSelectUserView" sender:self];
             
         } else {
-            NSLog(@"Could not find any Person entities in the context.");
-            OMPAddMainUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddMainUserViewController"];
-            [self addChildViewController:viewController];
-            [viewController willMoveToParentViewController:self];
-            [self.view addSubview:viewController.view];
-            [viewController didMoveToParentViewController:self];
+//            NSLog(@"Could not find any Person entities in the context.");
+//            OMPAddMainUserViewController *viewController = [self.storyboard instantiateViewControllerWithIdentifier:@"AddMainUserViewController"];
+//            [self addChildViewController:viewController];
+//            [viewController willMoveToParentViewController:self];
+//            [self.view addSubview:viewController.view];
+//            [viewController didMoveToParentViewController:self];
+            [self performSegueWithIdentifier:@"ShowAddUserView" sender:self];
         }
         
     }
-    
     
     
     
@@ -95,5 +99,18 @@
         return YES;
     }
 }
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
+- (void)viewDidDisappear:(BOOL)animated 
+{
+    [super viewDidDisappear:animated];
+    [self.navigationController setNavigationBarHidden:YES];
+}
+
 
 @end

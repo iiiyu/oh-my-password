@@ -14,6 +14,7 @@
 
 @implementation OMPAccountTableViewController
 
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -36,9 +37,11 @@
 
 - (void)viewDidUnload
 {
+    [self.navigationController setNavigationBarHidden:YES];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    
 }
 
 - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation
@@ -50,6 +53,9 @@
 {
     [super viewWillAppear:animated];
     [self.navigationController setToolbarHidden:NO animated:YES];
+    [self.navigationController setNavigationBarHidden:NO];
+    self.navigationItem.hidesBackButton = YES;
+
 }
 
 #pragma mark - Table view data source

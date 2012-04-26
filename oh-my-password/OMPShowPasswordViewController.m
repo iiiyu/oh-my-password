@@ -27,10 +27,12 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    [self.navigationController setNavigationBarHidden:NO];
 }
 
 - (void)viewDidUnload
 {
+    [self.navigationController setNavigationBarHidden:YES];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
