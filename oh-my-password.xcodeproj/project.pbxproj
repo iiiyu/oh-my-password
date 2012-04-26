@@ -12,6 +12,7 @@
 		C908736E1543C17800CF3B48 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = C908736D1543C17800CF3B48 /* User.m */; };
 		C908737E1543CEAC00CF3B48 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C908737D1543CEAC00CF3B48 /* CoreData.framework */; };
 		C9087389154403D100CF3B48 /* OMPDataModle.m in Sources */ = {isa = PBXBuildFile; fileRef = C9087388154403D100CF3B48 /* OMPDataModle.m */; };
+		C96FA45C1548EF23006D6387 /* OMPSelectUserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C96FA45B1548EF23006D6387 /* OMPSelectUserViewController.m */; };
 		C9B29B5A154132EA0004EBC8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B59154132EA0004EBC8 /* UIKit.framework */; };
 		C9B29B5C154132EA0004EBC8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5B154132EA0004EBC8 /* Foundation.framework */; };
 		C9B29B5E154132EA0004EBC8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B29B5D154132EA0004EBC8 /* CoreGraphics.framework */; };
@@ -42,6 +43,8 @@
 		C908737D1543CEAC00CF3B48 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		C9087387154403D100CF3B48 /* OMPDataModle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OMPDataModle.h; sourceTree = "<group>"; };
 		C9087388154403D100CF3B48 /* OMPDataModle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OMPDataModle.m; sourceTree = "<group>"; };
+		C96FA45A1548EF23006D6387 /* OMPSelectUserViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OMPSelectUserViewController.h; path = ../OMPSelectUserViewController.h; sourceTree = "<group>"; };
+		C96FA45B1548EF23006D6387 /* OMPSelectUserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = OMPSelectUserViewController.m; path = ../OMPSelectUserViewController.m; sourceTree = "<group>"; };
 		C9B29B55154132EA0004EBC8 /* oh-my-password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "oh-my-password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C9B29B59154132EA0004EBC8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		C9B29B5B154132EA0004EBC8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -202,6 +205,8 @@
 				C9B29B98154154560004EBC8 /* OMPShowAccountViewController.m */,
 				C9B29B9A154154A10004EBC8 /* OMPShowPasswordViewController.h */,
 				C9B29B9B154154A10004EBC8 /* OMPShowPasswordViewController.m */,
+				C96FA45A1548EF23006D6387 /* OMPSelectUserViewController.h */,
+				C96FA45B1548EF23006D6387 /* OMPSelectUserViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -306,6 +311,7 @@
 				C908736A1543C00A00CF3B48 /* OpenUDID.m in Sources */,
 				C908736E1543C17800CF3B48 /* User.m in Sources */,
 				C9087389154403D100CF3B48 /* OMPDataModle.m in Sources */,
+				C96FA45C1548EF23006D6387 /* OMPSelectUserViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

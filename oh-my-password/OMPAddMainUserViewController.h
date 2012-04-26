@@ -11,4 +11,7 @@
 @interface OMPAddMainUserViewController : UIViewController
 
 
+
+@property (weak, nonatomic) IBOutlet UITextField *textFieldUserName;
+
 @end

@@ -7,6 +7,7 @@
 //
 
 #import "OMPMainPasswordViewController.h"
+#import "OMPCommon.h"
 
 @interface OMPMainPasswordViewController ()
 
@@ -27,6 +28,53 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    OMPDataModle *ompDataModle = [OMPDataModle shareOMPDataModle];
+    
+    /* Create the fetch request first */
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    
+    /* Here is the entity whose contents we want to read */
+    NSEntityDescription *entity = 
+    [NSEntityDescription
+     entityForName:@"User"
+     inManagedObjectContext:ompDataModle.managedObjectContext];
+    
+    /* Tell the request that we want to read the
+     contents of the Person entity */
+    [fetchRequest setEntity:entity];
+    
+    NSError *requestError = nil;
+    
+    /* And execute the fetch request on the context */
+    NSArray *users = 
+    [ompDataModle.managedObjectContext executeFetchRequest:fetchRequest
+                                             error:&requestError];
+    
+    /* Make sure we get the array */
+    if ([users count] > 0){
+        
+        /* Go through the persons array one by one */
+        NSUInteger counter = 1;
+        for (User *thisUser in users){
+            
+            NSLog(@"User %lu Name = %@",
+                  (unsigned long)counter,
+                  thisUser.userName);
+            
+            NSLog(@"Person %lu UDID = %@",
+                  (unsigned long)counter,
+                  thisUser.userUDID);
+            
+            counter++;
+        }
+        
+    } else {
+        NSLog(@"Could not find any Person entities in the context.");
+    }
+    
+    
+    
 }
 
 - (void)viewDidUnload

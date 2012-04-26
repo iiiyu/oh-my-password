@@ -21,6 +21,44 @@
             </objects>
             <point key="canvasLocation" x="620" y="182"/>
         </scene>
+        <!--Select User View Controller-->
+        <scene sceneID="lQd-GC-Byx">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GBM-PT-I7k" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController storyboardIdentifier="SelectUserViewController" id="UmX-pX-Lrk" customClass="OMPSelectUserViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="OU0-80-OON">
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="checkmark" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" textLabel="2LD-JU-Z4k" style="IBUITableViewCellStyleDefault" id="kgN-jB-s5h">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="300" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="2LD-JU-Z4k">
+                                            <rect key="frame" x="10" y="0.0" width="280" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="UmX-pX-Lrk" id="gh2-zf-ePa"/>
+                            <outlet property="delegate" destination="UmX-pX-Lrk" id="q7M-Xf-0Xb"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+            </objects>
+            <point key="canvasLocation" x="1016" y="-66"/>
+        </scene>
         <!--Add Main User View Controller-->
         <scene sceneID="i5g-7a-XhL">
             <objects>
@@ -41,7 +79,10 @@
                                 <rect key="frame" x="20" y="92" width="280" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                                <connections>
+                                    <action selector="textFieldDoneEditing:" destination="xzL-N3-L7v" eventType="editingDidEndOnExit" id="rOd-Ru-Lza"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="awl-15-AEu">
                                 <rect key="frame" x="124" y="211" width="72" height="37"/>
@@ -55,15 +96,19 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="x6u-ux-mrU" kind="push" id="M9S-gJ-rT6"/>
+                                    <action selector="saveUserNameAction:" destination="xzL-N3-L7v" eventType="touchUpInside" id="Xlm-Hf-Mwb"/>
+                                    <segue destination="x6u-ux-mrU" kind="modal" identifier="ShowMainPassword" id="BDW-Zv-Qzx"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="textFieldUserName" destination="NRh-gk-Eru" id="TOm-s1-ToH"/>
+                    </connections>
                 </viewController>
             </objects>
-            <point key="canvasLocation" x="1173" y="74"/>
+            <point key="canvasLocation" x="1383" y="-66"/>
         </scene>
         <!--Main Password View Controller-->
         <scene sceneID="VMj-EL-eyn">
@@ -97,6 +142,12 @@
                                     <segue destination="0T4-Yq-VLw" kind="modal" identifier="ShowAccountData" id="cSB-US-ms4"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" id="tQ1-Lj-Tqp">
+                                <rect key="frame" x="112" y="172" width="97" height="31"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="yes" returnKeyType="done"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -115,6 +166,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="gCP-BY-afr"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2652" y="-27"/>
@@ -240,6 +292,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SFM-IH-HWv"/>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="2652" y="1635"/>
@@ -282,29 +335,6 @@
             <point key="canvasLocation" x="1590" y="739"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="OMPAccountTableViewController" superclassName="UITableViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPAccountTableViewController.h"/>
-        </class>
-        <class className="OMPAddMainUserViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPAddMainUserViewController.h"/>
-        </class>
-        <class className="OMPAddUserViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPAddUserViewController.h"/>
-        </class>
-        <class className="OMPMainPasswordViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPMainPasswordViewController.h"/>
-        </class>
-        <class className="OMPMainViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPMainViewController.h"/>
-        </class>
-        <class className="OMPSettingViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPSettingViewController.h"/>
-        </class>
-        <class className="OMPShowAccountViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/OMPShowAccountViewController.h"/>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
