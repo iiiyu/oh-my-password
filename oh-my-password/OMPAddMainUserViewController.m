@@ -15,7 +15,13 @@
 
 @implementation OMPAddMainUserViewController
 
+@synthesize labelPasswordLength;
 @synthesize textFieldUserName;
+@synthesize sliderPasswordLength;
+@synthesize switchNumber;
+@synthesize switchChar;
+@synthesize switchSymbol;
+@synthesize segmentedControlCycle;
 
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -37,6 +43,12 @@
 {
 
     [self setTextFieldUserName:nil];
+    [self setLabelPasswordLength:nil];
+    [self setSliderPasswordLength:nil];
+    [self setSwitchNumber:nil];
+    [self setSwitchChar:nil];
+    [self setSwitchSymbol:nil];
+    [self setSegmentedControlCycle:nil];
     [super viewDidUnload];
     // Release any retained subviews of the main view.
 }
@@ -77,10 +89,27 @@
     
 }
 
+- (IBAction)sliderValueChanged:(id)sender {
+    if ([sender isEqual:self.sliderPasswordLength]){
+        int progresAsInt = self.sliderPasswordLength.value + 0.5;
+        self.labelPasswordLength.text = [[NSString alloc] initWithFormat:@"%d", progresAsInt];
+    }
+}
 
 - (IBAction)textFieldDoneEditing:(id)sender {
     [sender resignFirstResponder];
 }
 
+- (IBAction)checkSwitch:(id)sender {
+//    if ((self.switchChar == NO) && (self.switchNumber == NO) && (self.switchSymbol == NO)) {
+////        self.switchNumber = YES;
+//    }
+    
+    if (![self.switchNumber isOn] && ![self.switchChar isOn] && ![self.switchSymbol isOn]) {
+        [self.switchNumber setOn:YES];
+    }
+    
+    
+}
 
 @end

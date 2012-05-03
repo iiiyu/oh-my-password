@@ -11,7 +11,18 @@
 @interface OMPAddMainUserViewController : UIViewController
 
 
+@property (weak, nonatomic) IBOutlet UILabel *labelPasswordLength;
 
 @property (weak, nonatomic) IBOutlet UITextField *textFieldUserName;
+@property (weak, nonatomic) IBOutlet UISlider *sliderPasswordLength;
+@property (weak, nonatomic) IBOutlet UISwitch *switchNumber;
+@property (weak, nonatomic) IBOutlet UISwitch *switchChar;
+
+@property (weak, nonatomic) IBOutlet UISwitch *switchSymbol;
+
+@property (weak, nonatomic) IBOutlet UISegmentedControl *segmentedControlCycle;
+
+
+
 
 @end
